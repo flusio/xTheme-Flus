@@ -1,0 +1,7 @@
+{
+  "name": "Flus",
+  "author": "Marien Fressinaud",
+  "description": "Le thème par défaut du service flus.io, basé sur Origine",
+  "version": 0.1,
+  "files": ["template.css", "style.css"]
+}
