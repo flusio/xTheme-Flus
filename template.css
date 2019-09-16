@@ -652,7 +652,6 @@ a.btn {
 }
 
 .flux:not(.current):hover .item.title {
-    background: #fff;
     max-width: calc(100% - 320px);
     position: absolute;
 }
