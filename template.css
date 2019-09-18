@@ -1039,7 +1039,7 @@ input:checked + .slide-container .properties {
 
 .category .title.error::before {
     content: "⚠ ";
-    color: #bd362f;
+    color: var(--color-red-50);
 }
 
 .feed .item-title:not([data-unread="0"])::before {
