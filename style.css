@@ -24,35 +24,35 @@
     --color-primary-80: #000060;
     --color-primary-90: #000046;
 
-    --color-info-10: #F0FF95;
-    --color-info-20: #D7F97C;
-    --color-info-30: #BDDF62;
-    --color-info-40: #A4C649;
-    --color-info-50: #8AAC2F;
-    --color-info-60: #719316;
-    --color-info-70: #577900;
-    --color-info-80: #3E6000;
-    --color-info-90: #244600;
+    --color-info-10: #FFFF8D;
+    --color-info-20: #FFFF74;
+    --color-info-30: #EAE95A;
+    --color-info-40: #D1D041;
+    --color-info-50: #B7B627;
+    --color-info-60: #9E9D0E;
+    --color-info-70: #848300;
+    --color-info-80: #6B6A00;
+    --color-info-90: #515000;
 
-    --color-warning-10: #FFC395;
-    --color-warning-20: #F9AA7C;
-    --color-warning-30: #DF9062;
-    --color-warning-40: #C67749;
-    --color-warning-50: #AC5D2F;
-    --color-warning-60: #934416;
-    --color-warning-70: #792A00;
-    --color-warning-80: #601100;
-    --color-warning-90: #460000;
+    --color-warning-10: #FFF46C;
+    --color-warning-20: #FFDB53;
+    --color-warning-30: #FFC139;
+    --color-warning-40: #E9A820;
+    --color-warning-50: #CF8E06;
+    --color-warning-60: #B67500;
+    --color-warning-70: #9C5B00;
+    --color-warning-80: #834200;
+    --color-warning-90: #692800;
 
-    --color-alert-10: #FF95AC;
-    --color-alert-20: #F97C93;
-    --color-alert-30: #DF6279;
-    --color-alert-40: #C64960;
-    --color-alert-50: #AC2F46;
-    --color-alert-60: #93162D;
-    --color-alert-70: #790013;
-    --color-alert-80: #600000;
-    --color-alert-90: #460000;
+    --color-alert-10: #FF937E;
+    --color-alert-20: #FF7964;
+    --color-alert-30: #EB604B;
+    --color-alert-40: #D14631;
+    --color-alert-50: #B82D18;
+    --color-alert-60: #9E1300;
+    --color-alert-70: #850000;
+    --color-alert-80: #6B0000;
+    --color-alert-90: #6B0000;
 }
 
 html, body {
@@ -314,12 +314,12 @@ a.btn {
 }
 
 .nav-list .item.empty a {
-    color: var(--color-warning-50);
+    color: var(--color-warning-70);
 }
 
 .nav-list .item.active.empty a {
     background: var(--color-warning-50);
-    color: var(--color-grey-10);
+    color: var(--color-grey-90);
 }
 
 .nav-list .item.error a {
@@ -678,27 +678,30 @@ a.btn {
 }
 
 /*=== Aside main page (feeds) */
+.feed.item.empty,
+.feed.item.empty > a {
+    color: var(--color-warning-70);
+}
+
 .feed.item.empty.active {
     background: var(--color-warning-50);
+}
+
+.feed.item.empty.active,
+.feed.item.empty.active > a {
+    color: var(--color-grey-90);
+}
+
+.feed.item.error,
+.feed.item.error > a {
+    color: var(--color-alert-70);
 }
 
 .feed.item.error.active {
     background: var(--color-alert-50);
 }
 
-.feed.item.empty,
-.feed.item.empty > a {
-    color: var(--color-warning-50);
-}
-
-.feed.item.error,
-.feed.item.error > a {
-    color: var(--color-alert-50);
-}
-
-.feed.item.empty.active,
 .feed.item.error.active,
-.feed.item.empty.active > a,
 .feed.item.error.active > a {
     color: var(--color-grey-10);
 }
@@ -802,7 +805,6 @@ a.btn {
 .flux {
     background: var(--color-grey-10);
     border-left: 4px solid var(--color-grey-40);
-    border-top: 1px solid var(--color-grey-30);
 }
 
 .flux:hover {
@@ -815,7 +817,7 @@ a.btn {
 }
 
 .flux.not_read {
-    border-left: 4px solid var(--color-alert-30);
+    border-left: 4px solid var(--color-alert-40);
 /*
     background: var(--color-alert-10);
     border-top-color: var(--color-alert-30);
@@ -823,7 +825,7 @@ a.btn {
 }
 
 .flux.favorite {
-    border-left: 4px solid var(--color-info-30);
+    border-left: 4px solid var(--color-info-40);
 /*
     background: var(--color-info-10);
     border-top-color: var(--color-info-30);
@@ -833,6 +835,7 @@ a.btn {
 .flux_header {
     font-size: 0.8rem;
     cursor: pointer;
+    border-top: 1px solid var(--color-grey-30);
 }
 
 .flux_header .title {
