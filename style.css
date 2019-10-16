@@ -871,33 +871,56 @@ a.btn {
 */
 }
 
-.flux_header {
+.flux .horizontal-list {
     display: flex;
+    min-height: 2.5rem;
 
     align-items: center;
 
     font-size: 0.8rem;
     cursor: pointer;
-    border-top: 1px solid var(--color-grey-30);
 }
 
-.flux_header > * {
+.flux .horizontal-list > * {
     flex-shrink: 0;
 }
+.flux .horizontal-list.bottom > .item {
+    flex-grow: 1;
+}
+.flux .horizontal-list.bottom > .item.manage,
+.flux .horizontal-list.bottom > .item.date,
+.flux .horizontal-list.bottom > .item.link {
+    flex-grow: 0;
+}
 
-.flux_header .website {
+.flux .flux_header {
+    border-top: 1px solid var(--color-grey-30);
+}
+.flux .bottom {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.flux .item > a {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.flux .website {
     padding-left: .5rem;
     padding-right: .5rem;
 }
 
-.flux_header .title {
+.flux .title {
     flex-grow: 1;
     flex-shrink: 1;
 
     font-size: 0.9rem;
     line-height: 1.2rem;
 }
-.flux_header .title a {
+.flux .title a {
     outline: none;
 }
 
@@ -910,9 +933,11 @@ a.btn {
     font-size: .8rem;
 }
 
-.flux .bottom {
-    font-size: 0.8rem;
-    text-align: center;
+.flux .manage a,
+.flux .website a,
+.flux .link a {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
 /*=== Content of feed articles */

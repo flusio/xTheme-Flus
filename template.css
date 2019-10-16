@@ -637,11 +637,6 @@ a.btn {
     position: relative;
 }
 
-.flux .item {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-}
-
 .flux .item.manage,
 .flux .item.link {
     width: 40px;
