@@ -698,6 +698,10 @@ a.btn {
 }
 
 /*=== Aside main page (categories) */
+.aside_feed .stick {
+    margin-right: 0;
+}
+
 .aside_feed .category .title:not([data-unread="0"])::after {
     margin: 10px 0;
     padding: 0 10px;
