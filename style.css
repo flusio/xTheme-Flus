@@ -925,6 +925,11 @@ a.btn {
     line-height: 1.2rem;
 }
 .flux .title a {
+    display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    white-space: normal;
+    overflow: visible;
     outline: none;
 }
 
