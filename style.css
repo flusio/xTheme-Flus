@@ -1086,14 +1086,30 @@ a.btn {
 /*================*/
 #stream.reader .flux {
     padding: 0 0 50px;
-    color: var(--color-grey-10);
+    color: var(--color-grey-90);
     border: none;
 }
 
 #stream.reader .flux .author {
     margin: 0 0 10px;
-    color: var(--color-grey-10);
+    color: var(--color-grey-90);
     font-size: 90%;
+}
+
+#stream.reader .flux .read,
+#stream.reader .flux .bookmark {
+    display: inline-block;
+    width: 40px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    text-align: center;
+}
+
+#stream.reader .flux .read img,
+#stream.reader .flux .bookmark img,
+#stream.reader .flux img.favicon {
+    border: none;
 }
 
 /*=== GLOBAL VIEW */
