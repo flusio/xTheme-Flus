@@ -246,12 +246,24 @@ a.btn {
     line-height: 27px;
 }
 
-#btn-subscription,
-#btn-importExport,
-.btn.toggle-password,
+#btn-subscription {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .nav_menu .btn {
     padding-left: 1rem;
     padding-right: 1rem;
+
+    flex-shrink: 0;
+}
+
+#btn-importExport,
+.btn.toggle-password {
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    flex-shrink: 0;
 }
 
 .btn:hover {
