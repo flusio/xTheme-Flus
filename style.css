@@ -785,6 +785,12 @@ a.btn {
 
 /*=== Prompt (centered) */
 .prompt {
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
     text-align: center;
 }
 
@@ -793,8 +799,10 @@ a.btn {
 }
 
 .prompt form {
-    margin: 10px auto 20px auto;
-    width: 250px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    text-align: left;
 }
 
 .prompt form > div {
@@ -806,8 +814,17 @@ a.btn {
     margin-right: 0;
 }
 
+.prompt .stick,
 .prompt input {
     width: 100%;
+}
+
+.prompt .prompt-actions {
+    display: flex;
+    margin-top: 2rem;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
 .prompt p {
