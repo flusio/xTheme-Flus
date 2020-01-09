@@ -404,7 +404,13 @@ a.btn {
 
 #form-extension .horizontal-list,
 .stat #form-delete .horizontal-list {
+    width: auto;
     margin-bottom: .5rem;
+}
+
+#form-extension .horizontal-list .item + .item,
+.stat #form-delete .horizontal-list .item  + .item {
+    padding-left: 1rem;
 }
 
 /*=== Dropdown */
