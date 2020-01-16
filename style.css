@@ -914,7 +914,7 @@ a.btn {
     display: flex;
     min-height: 2.5rem;
 
-    align-items: center;
+    align-items: flex-start;
 
     font-size: 0.8rem;
     cursor: pointer;
@@ -961,8 +961,8 @@ a.btn {
 }
 .flux .title a {
     display: inline-block;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
     white-space: normal;
     overflow: visible;
     outline: none;
@@ -973,6 +973,9 @@ a.btn {
 }
 
 .flux .date {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
     color: var(--color-grey-60);
     font-size: .8rem;
 }
