@@ -168,7 +168,7 @@ form th {
 
 .form-group .group-name {
     padding: 10px 0;
-    text-align: right;
+    text-align: left;
 }
 
 .form-group .group-controls {
@@ -177,18 +177,18 @@ form th {
 }
 
 .form-group table {
-    margin: 10px 0 0 220px;
+    margin: 10px 220px 0 0;
 }
 
 /*=== Buttons */
 .stick {
     display: inline-flex;
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     font-size: 0;
     vertical-align: middle;
 }
 .stick:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .stick input,
@@ -197,21 +197,21 @@ form th {
 }
 
 .stick .btn {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .stick .btn:first-child,
 .stick input:first-child {
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
 }
 
 .stick .btn-important:first-child {
-    border-right: 1px solid var(--color-primary-70);
+    border-left: 1px solid var(--color-primary-70);
 }
 
 .stick .btn:last-child,
 .stick input:last-child {
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .stick .btn + .btn,
@@ -223,16 +223,16 @@ form th {
 .stick .dropdown + .btn,
 .stick .dropdown + input,
 .stick .dropdown + .dropdown > .btn {
-    border-left: none;
+    border-right: none;
 }
 
 .stick .btn + .dropdown > .btn {
-    border-left: none;
-    border-radius: 0 3px 3px 0;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
 }
 
 .btn {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     padding: .25rem 1.5rem;
     background: linear-gradient(to bottom, var(--color-grey-10), var(--color-grey-20));
     display: inline-block;
@@ -248,25 +248,25 @@ form th {
 }
 
 .btn:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 #btn-subscription {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .nav_menu .btn {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 
     flex-shrink: 0;
 }
 
 #btn-importExport,
 .btn.toggle-password {
-    padding-left: .75rem;
     padding-right: .75rem;
+    padding-left: .75rem;
 
     flex-shrink: 0;
 }
@@ -388,7 +388,7 @@ form th {
     margin: 0;
     background: var(--color-grey-20);
     border-bottom: 1px solid var(--color-grey-30);
-    text-align: right;
+    text-align: left;
 }
 
 .nav-head .item {
@@ -415,7 +415,7 @@ form th {
 
 #form-extension .horizontal-list .item + .item,
 .stat #form-delete .horizontal-list .item  + .item {
-    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /*=== Dropdown */
@@ -426,8 +426,8 @@ form th {
     background: var(--color-grey-10);
     border: 1px solid var(--color-grey-40);
     border-radius: 5px;
-    box-shadow: 1px 1px 3px var(--color-grey-40);
-    text-align: left;
+    box-shadow: -1px 1px 3px var(--color-grey-40);
+    text-align: right;
 }
 
 .dropdown-menu::after {
@@ -435,13 +435,13 @@ form th {
     width: 10px;
     height: 10px;
     border-top: 1px solid var(--color-grey-40);
-    border-left: 1px solid var(--color-grey-40);
+    border-right: 1px solid var(--color-grey-40);
     content: "";
     position: absolute;
     top: -6px;
-    right: 13px;
+    left: 13px;
     z-index: -10;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .dropdown-header {
@@ -449,7 +449,7 @@ form th {
     padding: .5rem 1rem;
     color: var(--color-grey-60);
     font-weight: bold;
-    text-align: left;
+    text-align: right;
 }
 
 .dropdown-menu > .item > a,
@@ -467,7 +467,7 @@ form th {
 
 .dropdown-menu > .item[aria-checked="true"] > a::before {
     font-weight: bold;
-    margin: 0 0 0 -14px;
+    margin: 0 -14px 0 0;
 }
 
 .dropdown-menu > .item:hover > a,
@@ -497,7 +497,7 @@ form th {
     color: var(--color-grey-60);
     font-size: 0.9em;
     border: 1px solid var(--color-grey-20);
-    border-right: 1px solid var(--color-grey-40);
+    border-left: 1px solid var(--color-grey-40);
     border-bottom: 1px solid var(--color-grey-40);
     border-radius: 5px;
 }
@@ -707,7 +707,7 @@ form th {
 
 .aside {
     background: var(--color-grey-10);
-    border-right: 1px solid var(--color-grey-40);
+    border-left: 1px solid var(--color-grey-40);
 }
 
 .aside.aside_feed {
@@ -722,7 +722,7 @@ form th {
 
 /*=== Aside main page (categories) */
 .aside_feed .stick {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .aside_feed .category .title:not([data-unread="0"])::after {
@@ -731,7 +731,7 @@ form th {
     background: inherit;
     font-size: 0.9rem;
     position: absolute;
-    right: 0;
+    left: 0;
     line-height: 1.5rem;
 }
 
@@ -765,7 +765,7 @@ form th {
 }
 
 .aside_feed .tree-folder-items .dropdown-menu::after {
-    left: 2px;
+    right: 2px;
 }
 
 .aside_feed .tree-folder-items .item .dropdown-target:target ~ .dropdown-toggle > .icon,
@@ -791,23 +791,23 @@ form th {
 /*=== Prompt (centered) */
 .prompt {
     max-width: 425px;
-    margin-left: auto;
     margin-right: auto;
-    padding-left: .5rem;
+    margin-left: auto;
     padding-right: .5rem;
+    padding-left: .5rem;
 
     text-align: center;
 }
 
 .prompt label {
-    text-align: left;
+    text-align: right;
 }
 
 .prompt form {
     margin-top: 3rem;
     margin-bottom: 5rem;
 
-    text-align: left;
+    text-align: right;
 }
 
 .prompt form > div {
@@ -816,7 +816,7 @@ form th {
 
 .prompt .stick {
     display: flex;
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .prompt .stick,
@@ -869,11 +869,11 @@ form th {
 }
 
 .day .name {
-    padding: 0 10px 0 0;
+    padding: 0 0 0 10px;
     color: var(--color-grey-50);
     font-size: 1.8em;
     font-style: italic;
-    text-align: right;
+    text-align: left;
 }
 
 /*=== Index menu */
@@ -887,7 +887,7 @@ form th {
 /*=== Feed articles */
 .flux {
     background: var(--color-grey-10);
-    border-left: 4px solid var(--color-grey-40);
+    border-right: 4px solid var(--color-grey-40);
 }
 
 .flux:hover {
@@ -896,11 +896,11 @@ form th {
 
 .flux.current {
     background: var(--color-grey-10);
-    border-left: 4px solid var(--color-primary-50);
+    border-right: 4px solid var(--color-primary-50);
 }
 
 .flux.not_read {
-    border-left: 4px solid var(--color-alert-40);
+    border-right: 4px solid var(--color-alert-40);
 /*
     background: var(--color-alert-10);
     border-top-color: var(--color-alert-30);
@@ -908,7 +908,7 @@ form th {
 }
 
 .flux.favorite {
-    border-left: 4px solid var(--color-info-40);
+    border-right: 4px solid var(--color-info-40);
 /*
     background: var(--color-info-10);
     border-top-color: var(--color-info-30);
@@ -953,8 +953,8 @@ form th {
 }
 
 .flux .website {
-    padding-left: .5rem;
     padding-right: .5rem;
+    padding-left: .5rem;
 }
 
 .flux .title {
@@ -974,7 +974,7 @@ form th {
 }
 
 .flux .website .favicon {
-    margin-right: .25rem;
+    margin-left: .25rem;
 }
 
 .flux .date {
@@ -1058,7 +1058,7 @@ form th {
 
 /*=== Notification and actualize notification */
 .notification {
-    padding: 0 0 0 5px;
+    padding: 0 5px 0 0;
     font-size: 0.9em;
     border-radius: 3px;
     box-shadow: 0 0 5px var(--color-grey-30);
@@ -1160,7 +1160,7 @@ form th {
 .box.category .box-title .title {
     font-weight: normal;
     text-decoration: none;
-    text-align: left;
+    text-align: right;
 }
 
 .box.category:not([data-unread="0"]) .box-title {
@@ -1178,7 +1178,7 @@ form th {
     border: 0;
     box-shadow: none;
     position: absolute;
-    top: 5px; right: 10px;
+    top: 5px; left: 10px;
     font-weight: bold;
     text-shadow: none;
 }
@@ -1196,11 +1196,11 @@ form th {
 }
 
 .aside.aside_feed .nav-form .dropdown .dropdown-menu {
-    right: -20px;
+    left: -20px;
 }
 
 .aside.aside_feed .nav-form .dropdown .dropdown-menu::after {
-    right: 33px;
+    left: 33px;
 }
 
 /*=== STATISTICS */
@@ -1278,7 +1278,7 @@ form th {
 
 @media (max-width: 840px) {
     .aside {
-        box-shadow: 3px 0 3px var(--color-grey-40);
+        box-shadow: -3px 0 3px var(--color-grey-40);
         transition: width 200ms linear;
     }
 
@@ -1335,7 +1335,7 @@ form th {
     .notification a.close {
         background: transparent;
         display: block;
-        left: 0;
+        right: 0;
     }
 
     .notification a.close:hover {
