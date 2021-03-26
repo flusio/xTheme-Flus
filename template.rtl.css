@@ -201,6 +201,15 @@ td.numeric {
     display: block;
 }
 
+.form-advanced-title {
+	width: 200px;
+	padding: 15px 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: left;
+	cursor: pointer;
+}
+
 @supports (position: sticky) {
     #mark-read-aside {
         position: sticky;
@@ -660,13 +669,12 @@ a.btn {
     text-decoration: none;
 }
 
-.flux .item.author {
+.flux .item.title .author {
     display: inline;
     padding-right: 1.5rem;
     color: var(--color-grey-60);
     font-size: .9rem;
     font-weight: normal;
-    white-space: normal;
 }
 
 .flux .item.share > a,
